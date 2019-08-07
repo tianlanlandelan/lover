@@ -1,0 +1,65 @@
+	.kyle-clear{
+		padding: 0upx;
+		margin: 0upx;
+	}
+	.kyle-padding-sm{
+		padding:8upx 10upx;
+	}
+	.kyle-padding{
+		padding:16upx 20upx;
+	}
+	.kyle-margin-height{
+		margin-top: 10upx;
+		margin-bottom: 10upx;
+	}
+	.kyle-margin-sm{
+		margin: 8upx 10upx;
+	}
+	.kyle-margin{
+		margin: 16upx 20upx;
+	}
+	.kyle-split{
+		height: 20upx;
+	}
+	.kyle-footer{
+		height: 200upx;
+	}
+	.kyle-radius{
+		border-radius:10upx;
+	}
+	.kyle-inline{
+		display: inline-block;
+	}
+	.kyle-right{
+		text-align: right;
+	}
+	.kyle-center{
+		text-align: center;
+	}
+	.kyle-6-1{
+		width: 16.6%;
+	}
+	.kyle-5-1{
+		width: 20%;
+	}
+	.kyle-4-1{
+		width: 25%;
+	}
+	.kyle-3-1{
+		width: 33.3%;
+	}
+	.kyle-2-1{
+		width: 50%;
+	}
+	.kyle-4-3{
+		width: 75%;
+	}
+	.kyle-5-4{
+		width: 80%;
+	}
+	.kyle-6-5{
+		width: 83.4%;
+	}
+	.kyle-1-1{
+		width: 100%;
+	}

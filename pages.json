@@ -1,0 +1,131 @@
+{
+	"pages": [ //pages数组中第一项表示应用启动页，参考：https://uniapp.dcloud.io/collocation/pages
+		{
+			"path": "pages/index/index",
+			"style": {
+				"navigationBarTitleText": "恋爱话术",
+				"app-plus": {
+					"bounce": "vertical",
+					"titleNView": {
+						"buttons": [{
+							"text": "\ue534",
+							"fontSrc": "/static/uni.ttf",
+							"fontSize": "22px",
+							"color": "#999999"
+						}]
+					}
+				}
+			}
+		},
+		{
+			"path": "pages/index/action",
+			"style": {
+				"navigationBarTitleText": "实战",
+				"app-plus": {
+					"bounce": "vertical",
+					"titleNView": {
+						"buttons": [{
+							"text": "\ue534",
+							"fontSrc": "/static/uni.ttf",
+							"fontSize": "22px",
+							"color": "#999999"
+						}]
+					}
+				}
+			}
+		},
+		{
+			"path": "pages/index/find",
+			"style": {
+				"navigationBarTitleText": "发现",
+				"app-plus": {
+					"bounce": "vertical",
+					"titleNView": {
+						"buttons": [{
+							"text": "\ue534",
+							"fontSrc": "/static/uni.ttf",
+							"fontSize": "22px",
+							"color": "#999999"
+						}]
+					}
+				}
+			}
+		},
+		{
+			"path": "pages/index/school",
+			"style": {
+				"navigationBarTitleText": "学堂",
+				"app-plus": {
+					"bounce": "vertical",
+					"titleNView": {
+						"buttons": [{
+							"text": "\ue534",
+							"fontSrc": "/static/uni.ttf",
+							"fontSize": "22px",
+							"color": "#999999"
+						}]
+					}
+				}
+			}
+		},
+		{
+			"path": "pages/index/me",
+			"style": {
+				"navigationBarTitleText": "我的",
+				"app-plus": {
+					"bounce": "vertical",
+					"titleNView": {
+						"buttons": [{
+							"text": "\ue534",
+							"fontSrc": "/static/uni.ttf",
+							"fontSize": "22px",
+							"color": "#999999"
+						}]
+					}
+				}
+			}
+		}
+	],
+	"globalStyle": {
+		"navigationBarTextStyle": "black",
+		"navigationBarTitleText": "恋爱话术",
+		"navigationBarBackgroundColor": "#F8F8F8",
+		"backgroundColor": "#F8F8F8"
+	},
+	// 底部导航
+	"tabBar": {
+		"color": "#7A7E83",
+		"selectedColor": "#007AFF",
+		"borderStyle": "black",
+		"backgroundColor": "#F8F8F8",
+		"list": [{
+				"pagePath": "pages/index/index",
+				"iconPath": "static/bar/index.png",
+				"selectedIconPath": "static/bar/indexHL.png",
+				"text": "首页"
+			},
+			{
+				"pagePath": "pages/index/action",
+				"iconPath": "static/bar/index.png",
+				"selectedIconPath": "static/bar/indexHL.png",
+				"text": "实战"
+			}, {
+				"pagePath": "pages/index/find",
+				"iconPath": "static/bar/index.png",
+				"selectedIconPath": "static/bar/indexHL.png",
+				"text": "发现"
+			}, {
+				"pagePath": "pages/index/school",
+				"iconPath": "static/bar/index.png",
+				"selectedIconPath": "static/bar/indexHL.png",
+				"text": "学堂"
+			},
+			{
+				"pagePath": "pages/index/me",
+				"iconPath": "static/bar/index.png",
+				"selectedIconPath": "static/bar/indexHL.png",
+				"text": "我的"
+			}
+		]
+	}
+}
