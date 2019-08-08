@@ -48,7 +48,7 @@
 					"../../static/banner/banner2.jpg",
 					"../../static/banner/banner3.jpg"
 				],
-				icon:"../../static/logo.png",
+				icon:"../../static/icon/wechat.png",
 				stories:[
 					{title:"舔狗式撩甜妹子，没被拉黑反而变男票"},
 					{title:"女票突然发起命题，强大的求生欲使我做出如下回答"},

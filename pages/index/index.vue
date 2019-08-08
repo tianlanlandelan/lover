@@ -14,20 +14,20 @@
 				</swiper-item>
 			</swiper>
 		</view>
-		<view class="kyle-split"></view>
+		<view class="kyle-split kyle-bg-white"></view>
 		<!--搜索-->
-		<view class="uni-flex uni-row view-search view-margin">
-			<view class="left kyle-4-3">
-				<input class="uni-input" confirm-type="search" 
+		<view class="uni-flex uni-row view-search kyle-padding">
+			<view class="kyle-4-3">
+				<input class="uni-input kyle-8-7" confirm-type="search" 
 				placeholder="请输入关键字搜索聊天话术" />
 			</view>
-			<view class="right kyle-center kyle-4-1">
+			<view class="right kyle-4-1">
 				<button type="warn" size="mini">搜索</button>
 			</view>		
 		</view>
-		<view class="kyle-split"></view>
+		<view class="kyle-split kyle-bg-white"></view>
 		<!--简介-->
-		<view class="uni-flex uni-row kyle-padding">
+		<view class="uni-flex uni-row kyle-margin kyle-color-warning">
 			<view class="kyle-2-1">
 				<text>一款优秀的话术搜索代聊软件</text>
 			</view>
@@ -36,13 +36,19 @@
 			</view>		
 		</view>
 		<view v-for="menu in menus" :key="menu.title">
-			<view class="kyle-split"></view>
 			<view class="kyle-padding">
-				<text>{{menu.title}}</text><text>|</text><text>{{menu.content}}</text>
+				<hr class="kyle-text4-color">
 			</view>
-			<view class="kyle-inline kyle-margin-sm" v-for="type in menu.typeList" :key="type.id" @click="goDetailPage(type.id)">
-				<uni-tag :text="type.name" type="primary" />
-			</view>	
+			<view>
+				<text class="kyle-text-bold kyle-text-big kyle-text1-color kyle-margin">{{menu.title}}</text>
+				<text class="kyle-text-sm kyle-text3-color kyle-margin-sm">|</text>
+				<text class="kyle-text3-color kyle-margin-sm"> {{menu.content}}</text>
+			</view>
+			<view class="kyle-padding">
+				<view class="kyle-inline " v-for="type in menu.typeList" :key="type.id" @click="goDetailPage(type)">
+					<uni-tag class="tag"  :circle="true" :text="type.name"  />
+				</view>	
+			</view>
 		</view>
 		
 		<view class="kyle-footer"></view>
@@ -122,9 +128,10 @@
 			}
 		},
 		methods: {
-			goDetailPage(index) {
+			goDetailPage(type) {
+				const pageUrl = "/pages/dialogueList?typeId="+type.id+"&typeName="+type.name;
 				uni.navigateTo({
-					url: '/pages/dialogueList?typeId='+index
+					url: pageUrl
 				})
 			}
 		},
@@ -152,5 +159,9 @@
 	}
 	.right button{
 		line-height: 80upx;
+	}
+	.tag{
+		color: #606266;
+		background-color: #DCDFE6;
 	}
 </style>

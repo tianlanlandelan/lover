@@ -14,11 +14,6 @@
 				</view>
 			</view>		
 		</view>
-			
-		
-		<text> {{name}} </text>
-			<button @click="test(name)">复制</button>
-			
 		<view class="kyle-footer"></view>
 	</view>
 </template>
@@ -29,7 +24,6 @@
 		},
 		data() {
 			return {
-				name:"节日快乐",
 				stories:[
 					{id:1,img:"../../static/img/img1.jpg",text:"520表白神器"},
 					{id:2,img:"../../static/img/img2.jpg",text:"想要挽回爱人，我们必须注重的一些挽回技巧"},
@@ -47,15 +41,6 @@
 		methods:{
 			clickCard(id){
 				console.info(id);
-			},
-			test(name) {
-					uni.setClipboardData(
-						{ data:name, 
-							success:function(data){
-								console.info("success",data);
-							} 
-						}
-					);
 			}
 		}
 	}

@@ -1,16 +1,24 @@
+	/*----分割-----*/
+	.kyle-split{
+		height: 20upx;
+	}
+	.kyle-footer{
+		height: 200upx;
+	}
+	
+	/*----初始化-----*/
 	.kyle-clear{
 		padding: 0upx;
 		margin: 0upx;
 	}
+	
+	
+	/*----边距-----*/
 	.kyle-padding-sm{
 		padding:8upx 10upx;
 	}
 	.kyle-padding{
 		padding:16upx 20upx;
-	}
-	.kyle-margin-height{
-		margin-top: 10upx;
-		margin-bottom: 10upx;
 	}
 	.kyle-margin-sm{
 		margin: 8upx 10upx;
@@ -18,18 +26,16 @@
 	.kyle-margin{
 		margin: 16upx 20upx;
 	}
-	.kyle-split{
-		height: 20upx;
-	}
-	.kyle-footer{
-		height: 200upx;
-	}
+
+	/*----圆角-----*/
 	.kyle-radius{
 		border-radius:10upx;
 	}
 	.kyle-inline{
 		display: inline-block;
 	}
+	
+	/*----布局-----*/
 	.kyle-right{
 		text-align: right;
 	}
@@ -66,6 +72,53 @@
 	.kyle-6-5{
 		width: 83.4%;
 	}
+	.kyle-8-7{
+		width: 87.5%;
+	}
 	.kyle-1-1{
 		width: 100%;
+	}	
+	
+	
+	/*----文本-----*/
+	/*主要文字*/
+	.kyle-text1-color{
+		color: #303133;
+	}
+	/*常规文字*/
+	.kyle-text2-color{
+		color: #606266;
+	}
+	/*次要文字*/
+	.kyle-text3-color{
+		color: #909399;
+	}
+	/*占位文字*/
+	.kyle-text4-color{
+		color: #C0C4CC;
+	}
+	/*加粗文字*/
+	.kyle-text-bold{
+		font-weight:bold;
+	}
+	/*大号文字*/
+	.kyle-text-big{
+		font-size: 32upx;
+	}
+	/*小号文字*/
+	.kyle-text-sm{
+		font-size:24upx;
+	}
+	
+	.kyle-bg-1{
+		background-color: #DCDFE6;
+	}
+	.kyle-bg-2{
+		background-color: #E4E7ED;
+	}
+	.kyle-bg-white{
+		background-color: white;
+	}
+	.kyle-color-warning{
+		color: #F56C6C;
 	}
