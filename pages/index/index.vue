@@ -40,8 +40,8 @@
 			<view class="kyle-padding">
 				<text>{{menu.title}}</text><text>|</text><text>{{menu.content}}</text>
 			</view>
-			<view class="kyle-inline kyle-margin-sm" v-for="sub in menu.subTitle" :key="sub.id">
-				<uni-tag :text="sub.name" type="primary" />
+			<view class="kyle-inline kyle-margin-sm" v-for="type in menu.typeList" :key="type.id" @click="goDetailPage(type.id)">
+				<uni-tag :text="type.name" type="primary" />
 			</view>	
 		</view>
 		
@@ -60,7 +60,7 @@
 				],
 				menus:[
                     {title:"开场",content:"尬聊只需搜一搜",
-                        subTitle:[
+                        typeList:[
 									{id:11,name:"搭讪开场"},
 									{id:12,name:"话题重新开始"},
 									{id:13,name:"表情话术"},
@@ -69,7 +69,7 @@
 								],
 					},
                     {title:"情绪",content:"他/她的情绪我知道",
-                        subTitle:[
+                        typeList:[
 									{id:21,name:"幽默聊天"},
 									{id:22,name:"共谋与赞美"},
 									{id:23,name:"调侃"},
@@ -79,7 +79,7 @@
 								],
 					},
                     {title:"聊天",content:"天南海北都有料",
-                        subTitle:[
+                        typeList:[
 									{id:31,name:"初聊互动"},
 									{id:32,name:"价值型聊天"},
 									{id:33,name:"冷读术"},
@@ -91,7 +91,7 @@
 									{id:39,name:"异议处理"}
                         ]},
                     {title:"升级",content:"拾火添柴有妙招",
-						subTitle:[
+						typeList:[
 									{id:41,name:"恋爱调情"},
 									{id:42,name:"暧昧话术"},
 									{id:43,name:"关系提高"},
@@ -101,7 +101,7 @@
 								],
 					},
                     {title:"邀约",content:"亲爱的我们约会吧",
-						subTitle:[
+						typeList:[
 									{id:51,name:"模糊邀约"},
 									{id:52,name:"邀约话术"},
 									{id:53,name:"速约模板"},
@@ -110,7 +110,7 @@
 								],
 					},
                     {title:"约会",content:"共度美好时光",
-						subTitle:[
+						typeList:[
 									{id:61,name:"现场聊天交流"},
 									{id:62,name:"互动与游戏"},
 									{id:63,name:"聊天模板"},
@@ -122,7 +122,11 @@
 			}
 		},
 		methods: {
-			
+			goDetailPage(index) {
+				uni.navigateTo({
+					url: '/pages/dialogueList?typeId='+index
+				})
+			}
 		},
 		components:{uniTag}
 	}
@@ -148,14 +152,5 @@
 	}
 	.right button{
 		line-height: 80upx;
-	}
-	.sub-text{
-		height: 80upx;
-		line-height: 80upx;
-	}
-	.flex-item {
-		width: 33.3%;
-		height: 200upx;
-		line-height: 200upx;
 	}
 </style>

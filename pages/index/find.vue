@@ -53,15 +53,9 @@
 						{ data:name, 
 							success:function(data){
 								console.info("success",data);
-							}, 
-							fail:function(err){
-								console.info("fail",err);
-							}, 
-							complete:function(res){
-								console.info("complete",res);
-							} ,
-						},
-					)
+							} 
+						}
+					);
 			}
 		}
 	}
