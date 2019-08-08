@@ -2,7 +2,17 @@
 	<view>
 		<uni-card v-for="list in dialogueList" :key="list.groupId">
 			<view v-for="info in list.list" :key="info.id">
-				<text>{{info.content}}</text>
+				<view class="uni-flex uni-row">
+					<view class="kyle-8-1">
+						<image src="../static/bar/index.png"></image>
+					</view>
+					<view class="kyle-4-3">
+						<text>{{info.content}}</text>
+					</view>
+					<view class="kyle-8-1 kyle-center">
+						<image  src="../static/bar/index.png"></image>
+					</view>
+				</view>
 			</view>
 		</uni-card>
 	</view>
@@ -42,4 +52,8 @@
 </script>
 
 <style>
+	image{
+		width: 30upx;
+		height: 30upx;
+	}
 </style>
