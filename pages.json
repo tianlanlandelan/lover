@@ -96,36 +96,36 @@
 	},
 	// 底部导航
 	"tabBar": {
-		"color": "#7A7E83",
-		"selectedColor": "#007AFF",
+		"color": "#909399",//element ui 次要文本色
+		"selectedColor": "#F56C6C",//element ui 警告色
 		"borderStyle": "black",
 		"backgroundColor": "#F8F8F8",
 		"list": [{
 				"pagePath": "pages/index/index",
-				"iconPath": "static/bar/index.png",
-				"selectedIconPath": "static/bar/indexHL.png",
+				"iconPath": "static/bar/home.png",
+				"selectedIconPath": "static/bar/home1.png",
 				"text": "首页"
 			},
 			{
 				"pagePath": "pages/index/action",
-				"iconPath": "static/bar/index.png",
-				"selectedIconPath": "static/bar/indexHL.png",
+				"iconPath": "static/bar/message.png",
+				"selectedIconPath": "static/bar/message1.png",
 				"text": "实战"
 			}, {
 				"pagePath": "pages/index/find",
-				"iconPath": "static/bar/index.png",
-				"selectedIconPath": "static/bar/indexHL.png",
+				"iconPath": "static/bar/find.png",
+				"selectedIconPath": "static/bar/find1.png",
 				"text": "发现"
 			}, {
 				"pagePath": "pages/index/school",
-				"iconPath": "static/bar/index.png",
-				"selectedIconPath": "static/bar/indexHL.png",
+				"iconPath": "static/bar/school.png",
+				"selectedIconPath": "static/bar/school1.png",
 				"text": "学堂"
 			},
 			{
 				"pagePath": "pages/index/me",
-				"iconPath": "static/bar/index.png",
-				"selectedIconPath": "static/bar/indexHL.png",
+				"iconPath": "static/bar/me.png",
+				"selectedIconPath": "static/bar/me1.png",
 				"text": "我的"
 			}
 		]

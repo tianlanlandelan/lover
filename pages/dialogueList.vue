@@ -3,14 +3,14 @@
 		<uni-card v-for="list in dialogueList" :key="list.groupId">
 			<view v-for="info in list.list" :key="info.id">
 				<view class="uni-flex uni-row">
-					<view class="kyle-8-1">
+					<view class="kyle-8-1 kyle-center">
 						<image src="../static/bar/index.png"></image>
 					</view>
 					<view class="kyle-4-3">
 						<text>{{info.content}}</text>
 					</view>
 					<view class="kyle-8-1 kyle-center">
-						<image  src="../static/bar/index.png"></image>
+						<image  src="../static/bar/index.png" @click="setClipboard(info.content)"></image>
 					</view>
 				</view>
 			</view>
@@ -47,7 +47,17 @@
 					]}
 				]
 			}
-		}			
+		},
+		methods:{
+			setClipboard(text){
+				uni.setClipboardData({
+					data: text,
+					success: () => {
+						console.log(text);
+					},
+				});
+			}
+		}
 	}
 </script>
 
