@@ -69,7 +69,7 @@
 
 <style>
 	image{
-		width: 30upx;
-		height: 30upx;
+		width: 40upx;
+		height: 40upx;
 	}
 </style>

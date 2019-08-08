@@ -37,7 +37,7 @@
 		</view>
 		<view v-for="menu in menus" :key="menu.title">
 			<view class="kyle-padding">
-				<hr class="kyle-text4-color">
+				<view class="split kyle-bg-2"></view>
 			</view>
 			<view>
 				<text class="kyle-text-bold kyle-text-big kyle-text1-color kyle-margin">{{menu.title}}</text>
@@ -46,7 +46,7 @@
 			</view>
 			<view class="kyle-padding">
 				<view class="kyle-inline " v-for="type in menu.typeList" :key="type.id" @click="goDetailPage(type)">
-					<uni-tag class="tag"  :circle="true" :text="type.name"  />
+					<uni-tag class="tag"  :text="type.name"  />
 				</view>	
 			</view>
 		</view>
@@ -163,5 +163,9 @@
 	.tag{
 		color: #606266;
 		background-color: #DCDFE6;
+		border-radius:10upx;
+	}
+	.split{
+		height: 2upx;
 	}
 </style>
