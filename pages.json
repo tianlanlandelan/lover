@@ -86,6 +86,8 @@
 			}
 		},{
 			"path": "pages/dialogueList"
+		},{
+			"path": "pages/articleInfo"
 		}
 	],
 	"globalStyle": {
