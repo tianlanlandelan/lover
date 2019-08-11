@@ -99,7 +99,7 @@
 	// 底部导航
 	"tabBar": {
 		"color": "#909399",//element ui 次要文本色
-		"selectedColor": "#F56C6C",//element ui 警告色
+		"selectedColor": "#FF1493",//css 中 deeppink的颜色值
 		"borderStyle": "black",
 		"backgroundColor": "#F8F8F8",
 		"list": [{
